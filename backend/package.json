@@ -1,11 +1,21 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "tsc server && node server",
+		"dev": "tsc server && nodemon server"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.1.0",
+		"dotenv": "^16.0.3",
+		"mongoose": "^6.7.2"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.14",
+		"nodemon": "^2.0.20"
+	}
 }
