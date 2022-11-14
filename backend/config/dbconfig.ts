@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-class dbConnection {
+class DBConnection {
 	dbUrl: string;
 	constructor(dbUrl: string) {
 		this.dbUrl = dbUrl;
@@ -13,4 +13,4 @@ class dbConnection {
 			});
 	}
 }
-export default dbConnection;
+export default DBConnection;

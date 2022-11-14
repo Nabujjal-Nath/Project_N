@@ -1,9 +1,9 @@
 import * as dotenv from "dotenv";
 dotenv.config(); // configure dotenv to access environment variables from .env file
 import * as express from "express";
-import dbConnection from "./config/dbconfig";
+import DBConnection from "./config/dbconfig";
 const app = express();
-new dbConnection(
+new DBConnection(
 	`mongodb+srv://${process.env.dbUserName}:${process.env.dbPassword}@cluster0.q3a5vxv.mongodb.net/test`
 );
 app.listen(process.env.PORT, () => {
